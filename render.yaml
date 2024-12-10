@@ -1,0 +1,20 @@
+databases:
+  - name: mysite
+    databaseName: task_management_backend_db
+    user: task_management_backend_db_user
+    plan: free
+
+services:
+  - type: web
+    name: task-management-backend
+    runtime: ruby
+    plan: free
+    buildCommand: "./bin/render-build.sh"
+    startCommand: "bundle exec rails server -b '0.0.0.0'"
+    envVars:
+      - key: DATABASE_URL
+        value: "postgresql://task_management_backend_db_user:kukrKgw3HjYrSqsHiJ5F9TnGDbIjJpRE@dpg-ctbtg7dumphs73asqgmg-a/task_management_backend_db"
+      - key: RAILS_MASTER_KEY
+        sync: false
+      - key: WEB_CONCURRENCY
+        value: "2"
