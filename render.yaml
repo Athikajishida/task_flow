@@ -14,7 +14,7 @@ services:
     envVars:
       - key: DATABASE_URL
         value: "postgresql://task_management_backend_db_user:kukrKgw3HjYrSqsHiJ5F9TnGDbIjJpRE@dpg-ctbtg7dumphs73asqgmg-a/task_management_backend_db"
-      - key: "krdyCbsxQUfIqfl5Hyz0+yCOb4xVDNNLKrNla0cOK3Fbw+sKgAIt2YQzUsgor0ddrDjgfV5wcDRedGEmJp9huB6062siStq/GrxHTcLzXa9vYXYgd+MwVjhBiWJkiTOGzfDlBq+VziRVLj2dx/vKQUEwTlfrZH/0ogbnjJ77vnjm4ugSj/QRABt+vMAVHmfDbIWkX5TgXs38KKvH+rY/wAsmXkWgMMLha0puiGOxARr3PVBUEEyS4azFPjzYWj3z8SteBpxcXAcJqdWmmWCCQjyOJ0HeMvrb5lbCNK8BFKtFyzCuw1usgnwybIQtgtStD9wYLb7afwJRrOhd8aR06pag2fP3koLjIfFe8563MWgFUAH1yvclxPHC0xW2AbA408EpkuaMKiBaEEN0LFPx/utebmGc--5rZ7XfxtV+J35M7T--F2plGfTRGaX+vRchavjCZg=="
+      - key: RAILS_MASTER_KEY
         sync: false
       - key: WEB_CONCURRENCY
         value: "2"
